@@ -1,0 +1,25 @@
+<div class="library-page">
+  <h2>Biblioteca</h2>
+
+  <div class="playlists">
+    <h3>Conjuntos de canciones guardados:</h3>
+    <ul>
+      <li>Conjunto de canciones 1</li>
+      <li>Conjunto de canciones 2</li>
+      <li>Conjunto de canciones 3</li>
+      <!-- Agrega más conjuntos de canciones guardados si es necesario -->
+    </ul>
+  </div>
+
+  <div class="create-playlist">
+    <h3>Crear lista de reproducción:</h3>
+    <input type="text" placeholder="Nombre de la lista">
+    <button (click)="createPlaylist()">Crear</button>
+  </div>
+  <div class="bottom-navigation">
+    <button class="nav-btn" (click)="navigate('home')">Home</button>
+    <button class="nav-btn" (click)="navigate('search')">Search</button>
+    <button class="nav-btn" (click)="navigate('library')">Library</button>
+  </div>
+</div>
+

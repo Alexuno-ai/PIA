@@ -1,0 +1,23 @@
+<div class="music-producer">
+  <div class="header">
+    <div class="logo">
+      <img [src]="currentSong?.image" alt="Song Image" *ngIf="currentSong?.image" />
+    </div>
+    <div class="menu">
+      <div class="player-controls">
+        <ion-icon name="play-skip-back-outline"></ion-icon>
+        <ion-icon name="pause-outline"></ion-icon>
+        <ion-icon name="play-skip-forward-outline"></ion-icon>
+        <div class="song-duration">0:00 / 3:45</div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Aquí puedes agregar las secciones y elementos del contenido del Productor de Música -->
+  </div>
+</div>
+

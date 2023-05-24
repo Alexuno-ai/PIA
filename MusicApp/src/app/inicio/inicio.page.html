@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bienvenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <div class="background-image"></div>
+    <div class="content">
+      <div class="logo">
+        <!-- Aquí puedes agregar el logotipo de Spotify o un elemento de texto como "Spotify" -->
+      </div>
+      <h2>Bienvenido a nuestra aplicación</h2>
+       <p>¡Explora, descubre y disfruta de la música!</p>
+      <button ion-button color="primary" (click)="goToLogin()">Iniciar sesión</button>
+      <button ion-button outline color="light" (click)="goToRegister()">Registrarse</button>
+    </div>
+  </ion-content>

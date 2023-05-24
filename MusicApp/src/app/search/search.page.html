@@ -1,0 +1,42 @@
+<div class="search-page">
+  <div class="search-bar">
+    <input type="text" placeholder="Buscar">
+    <button (click)="search()">Buscar</button>
+  </div>
+
+  <div class="recent-searches">
+    <h2>Búsquedas recientes:</h2>
+    <ul>
+      <li>Resultado de búsqueda reciente 1</li>
+      <li>Resultado de búsqueda reciente 2</li>
+      <li>Resultado de búsqueda reciente 3</li>
+      <li>Resultado de búsqueda reciente 4</li>
+      <li>Resultado de búsqueda reciente 5</li>
+    </ul>
+  </div>
+
+  <div class="genre-cards">
+    <div class="genre-card">
+      <img src="ruta-a-imagen-genero-1.jpg" alt="Género 1">
+      <h3>Rock</h3>
+    </div>
+    <div class="genre-card">
+      <img src="ruta-a-imagen-genero-2.jpg" alt="Género 2">
+      <h3>Cumbia</h3>
+    </div>
+    <div class="genre-card">
+      <img src="ruta-a-imagen-genero-3.jpg" alt="Género 1">
+      <h3>Banda</h3>
+    </div>
+    <div class="genre-card">
+      <img src="ruta-a-imagen-genero-4.jpg" alt="Género 2">
+      <h3>Pop</h3>
+    </div>
+  </div>
+  <div class="bottom-navigation">
+    <button class="nav-btn" (click)="navigate('home')">Home</button>
+    <button class="nav-btn" (click)="navigate('search')">Search</button>
+    <button class="nav-btn" (click)="navigate('library')">Library</button>
+  </div>
+</div>
+

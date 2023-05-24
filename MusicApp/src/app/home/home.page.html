@@ -1,0 +1,38 @@
+<div class="spotify-page">
+  <div class="sidebar">
+    <button class="sidebar-btn" (click)="toggleSidebar()">☰</button>
+  </div>
+
+  <div class="main-content">
+    <h2>Home Page</h2>
+    <!-- Contenido de la página principal -->
+
+    <div class="songs-container">
+      <div class="song" (click)="openPlaybackBar(song)">
+        Song 1
+      </div>
+      <div class="song" (click)="openPlaybackBar(song)">
+        Song 2
+      </div>
+      <div class="song" (click)="openPlaybackBar(song)">
+        Song 3
+      </div>
+      <!-- Agrega más elementos de canciones si es necesario -->
+    </div>
+  </div>
+
+  <div class="bottom-navigation">
+    <button class="nav-btn" (click)="navigate('home')">Home</button>
+    <button class="nav-btn" (click)="navigate('search')">Search</button>
+    <button class="nav-btn" (click)="navigate('library')">Library</button>
+  </div>
+
+  <div class="playback-bar" *ngIf="currentSong">
+    <div class="playback-info">
+      <button class="playback-btn" (click)="openPlaybackBarFull()">Open</button>
+      <h4>{{ currentSong }}</h4>
+    </div>
+    <button class="playback-btn" (click)="togglePlayback()">Pause</button>
+  </div>
+</div>
+

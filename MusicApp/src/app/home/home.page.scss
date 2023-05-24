@@ -1,0 +1,95 @@
+.spotify-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.sidebar-btn {
+  padding: 5px 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.songs-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.song {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bottom-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: #f1f1f1;
+}
+
+.nav-btn {
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.playback-bar {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #f1f1f1;
+}
+
+.playback-info {
+  display: flex;
+  align-items: center;
+}
+
+.playback-btn {
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-opened {
+  transform: translateX(0);
+}
+
+.sidebar-closed {
+  transform: translateX(-100%);
+}

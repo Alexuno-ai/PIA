@@ -1,0 +1,14 @@
+<div class="profile-page">
+  <h2>Mi perfil</h2>
+
+  <div class="profile-image">
+    <img [src]="profilePhotoUrl" alt="Foto de perfil" *ngIf="profilePhotoUrl">
+    <div class="camera-icon" (click)="openCamera()"></div>
+    <!-- Agrega un botón para abrir la cámara o seleccionar una imagen -->
+  </div>
+
+  <div class="account-info">
+    <h3>{{ accountName }}</h3>
+  </div>
+</div>
+
